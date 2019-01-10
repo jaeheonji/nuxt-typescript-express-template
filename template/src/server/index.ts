@@ -34,10 +34,7 @@ export default class NuxtExpressServer {
 
     // Listen the server
     this.app.listen(this.port, this.host);
-    consola.ready({
-      badge: true,
-      message: `Server listening on http://${this.host}:${this.port}`,
-    });
+    consola.ready(`Server listening on http://${this.host}:${this.port}`);
   }
 }
 
